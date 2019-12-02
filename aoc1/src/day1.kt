@@ -2,7 +2,7 @@ import java.io.File
 import kotlin.math.floor
 
 fun main() {
-    val numbers = readLines("src/input.txt")
+    val numbers = readLines("aoc1/src/input.txt")
     val sum = numbers.map { process(it) }.sum()
     println(sum)
 }
