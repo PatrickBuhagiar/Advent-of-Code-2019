@@ -1,3 +1,3 @@
-class WireInstruction(val direction: Direction, val steps: Int) {
+class WireInstruction(val direction: Char, val steps: Int) {
     
 }
