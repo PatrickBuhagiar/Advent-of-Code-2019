@@ -7,7 +7,7 @@ fun main() {
     val lines = readLines("src/input.txt")
     val maxX = lines[0].length
     val maxY = lines.size
-
+    // populating asteroids
     for (x in 0 until maxX) {
         for (y in 0 until maxY) {
             val c: Char = lines[y][x]
@@ -41,6 +41,7 @@ fun main() {
             }
         }
 
+    // Figure out Rotation order. 0 rad is upwards, left is negative, right is postiive 
     val pastZero = targetMap.keys.filter { it <= 0 }.sortedDescending()
     val preZero = targetMap.keys.filter { it > 0 }.sortedDescending()
 
